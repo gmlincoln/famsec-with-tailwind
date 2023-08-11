@@ -16,6 +16,21 @@
     
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/2fba3f7a77.js" crossorigin="anonymous"></script>
+    <!--Custom JS for Color  -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+              'color':'#667074',
+              'text-primary': '#134761'
+            }
+          }
+        }
+      }
+    </script>
+
     <!-- Custom Style -->
     <style>
         .font-inter{
@@ -61,5 +76,52 @@
           </div>
     </header>
     <!-- Header End -->
+    <main>
+
+    </main>
+    <!-- Footer Section Start -->
+    <footer class="py-10 ">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-20 mb-7 px-5 lg:px-0 lg:mb-12">
+        <div class="text-base space-y-7">
+          <img src="images/logo.svg" alt="">
+          <p class="text-[#667074]">From heartwarming testimonials to glowing reviews, these voices reflect the trust and confidence our customers place in us. Let their words speak volumes about the extraordinary experiences that await you with</p>
+          <p>
+            <a href="" class="text-[#1D5B79] font-semibold text-lg">
+              <span>Learn more</span> <i class="fa-solid fa-circle-chevron-right"></i>
+            </a>
+          </p>
+        </div> 
+        <div class="flex flex-row gap-10">
+          <div class="text-base flex flex-col space-y-4 w-6/12">
+            <h3 class="mb-3 text-[#233036] capitalize text-xl font-semibold">Company</h3> 
+            <a class="link text-color no-underline">Home</a> 
+            <a class="link text-color no-underline">How we work </a> 
+            <a class="link text-color no-underline">Our Mission</a> 
+            <a class="link text-color no-underline">About</a>
+            <a class="link text-color no-underline">Careers</a>
+            <a class="link text-color no-underline">Contact</a>
+          </div> 
+          <div class="text-base flex flex-col space-y-4">
+            <h3 class="mb-3 text-[#233036] capitalize text-xl font-semibold">Resources</h3> 
+            <a class="link text-color no-underline">Blog</a> 
+            <a class="link text-color no-underline">Support</a> 
+            <a class="link text-color no-underline">Terms & conditions</a> 
+            <a class="link text-color no-underline">Private policy</a>
+          </div> 
+        </div>
+        <div class="text-base">
+          <h3 class="mb-3 text-[#233036] capitalize text-xl font-semibold">Contact</h3> 
+          <div class="grid space-y-6">
+          <p class="text-color">Please feel free to reach out to us with any inquiries, questions, or assistance you may need.</p>
+          <p class="text-color"> <i class="fa-solid fa-location-dot text-[#1D5B79]"></i> <span class="ml-2">23 Main Street, Cityville, State, Zip Code</span></p>
+          <p class="text-color"><i class="fa-solid fa-phone text-[#1D5B79]"></i> <span class="ml-2">+880123456789</span></p>
+          <p><i class="fa-solid fa-globe text-[#1D5B79]"></i> <a href=""><span class="ml-2">https://hellobangaldesh.com</span></a></p>
+          </div>
+        </div>
+      </div>
+     <hr class="border-1 border-[#E5E7EB]"> 
+    <p class="text-color text-center mt-12 mb-20" >Copyright &copy; 2023. Designed by joefreycodes.com All rights reserved.</p>
+    </footer>
+    <!-- Footer Section End -->
 </body>
 </html>
