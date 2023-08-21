@@ -1,259 +1,523 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FamSec -  Family Insurance Website</title>
-    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FamSec - Family Insurance Website</title>
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon" />
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Tailwind CSS and DaisyUI -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/2fba3f7a77.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/2fba3f7a77.js"
+      crossorigin="anonymous"
+    ></script>
     <!--Custom JS for Color  -->
     <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
-              clifford: '#da373d',
-              'color':'#667074',
-              'text-primary': '#134761'
-            }
-          }
-        }
-      }
+              clifford: "#da373d",
+              color: "#667074",
+              "text-primary": "#134761",
+            },
+          },
+        },
+      };
     </script>
 
     <!-- Custom Style -->
     <style>
-        .font-inter{
-            font-family: 'Inter', sans-serif;
-        }
+      .font-inter {
+        font-family: "Inter", sans-serif;
+      }
     </style>
-</head>
-<body class="">
+  </head>
+  <body class="">
     <!-- Header Start -->
     <header class="max-w-[1180px] mx-auto">
-        <div class="navbar mb-24 mt-7">
-            <div class="navbar-start">
-                <div class="dropdown">
-                    <label tabindex="0" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                    </label>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                      <li><a>Home</a></li>
-                      <li><a>How we work</a></li>
-                      <li><a>Our mission</a></li>
-                      <li><a>About</a></li>
-                      <li><a>Contact</a></li>
-                    </ul>
-                  </div>
-              <a class="cursor-pointer normal-case text-xl" href="#">
-                <img src="images/logo.svg" alt="">
-              </a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1 text-base text-[#748081] font-normal">
-                <li><a class="hover:bg-white">Home</a></li>
-                <li><a class="hover:bg-white">How we work</a></li>
-                <li><a class="hover:bg-white">Our mission</a></li>
-                <li><a class="hover:bg-white">About</a></li>
-                <li><a class="hover:bg-white">Contact</a></li>
-              </ul>
-            </div>
-            <div class="navbar-end">
-             <button class="btn bg-[#1D5B79] text-white capitalize hover:bg-[#134761]  lg:px-10 lg:py5  hover:shadow-lg text-lg">
-              <a class="">Get started</a>
-             </button>
-            </div>
-        </div>
-        <div class="flex flex-col lg:flex-row gap-6 px-2 md:px-3">
-          <div class="space-y-6 w-[96%] lg:w-[48%] text-color">
-            <h4 class="text-[#3E484A] font-bold relative">
-              <span class="absolute top-0 left-0 h-full w-2/6 md:w-2/12 lg:w-1/5 bg-[#FFF3D9]"></span>
-              <span class="relative z-10">Welcome to FamSec</span></h4>
-            <h2 class="text-5xl font-extrabold text-[#233036]">Protecting Families,<br>
-               Securing Futures</h2>
-            <p class="text-lg">
-              We understand that protecting your loved ones is of utmost importance. That's why we are dedicated to providing comprehensive solutions tailored to your family's unique needs. Our expert team is committed to creating a solid foundation of security and peace of mind for you and your loved ones.
-            </p>
-            <div class="flex gap-2 lg:gap-4">
-            <button class="btn bg-[#1D5B79] text-white capitalize hover:bg-[#134761] ">Get started</button>
-            <button class="btn bg-[#2EC0BB] text-white capitalize hover:bg-[#179792] ">How it works?</button>
-            </div>
+      <div class="navbar mb-24 mt-7">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Home</a></li>
+              <li><a>How we work</a></li>
+              <li><a>Our mission</a></li>
+              <li><a>About</a></li>
+              <li><a>Contact</a></li>
+            </ul>
           </div>
-          <div class="w-[96%] lg:w-[48%]">
-            <div class="grid grid-cols-3 gap-3 justify-evenly">
-              <img class="rounded-lg row-span-3 col-span-2 w-[100%]" src="images/hero-img-1-min.jpg" alt="">
-              <div class="flex flex-row gap-2 mt-[50%]">
-                <img class="rounded-lg w-[50%] lg:h-[100%]" src="images/hero-img-2-min.jpg" alt="">
-                <div class="bg-[#FFF3D9] w-[50%] lg:h-[100%]  rounded-tr-full"></div>
-              </div>
-              <img class="rounded-lg w-44 row-span-2" src="images/hero-img-3-min.jpg" alt="">
+          <a class="cursor-pointer normal-case text-xl" href="#">
+            <img src="images/logo.svg" alt="" />
+          </a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul
+            class="menu menu-horizontal px-1 text-base text-[#748081] font-normal"
+          >
+            <li><a class="hover:bg-white">Home</a></li>
+            <li><a class="hover:bg-white">How we work</a></li>
+            <li><a class="hover:bg-white">Our mission</a></li>
+            <li><a class="hover:bg-white">About</a></li>
+            <li><a class="hover:bg-white">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <button
+            class="btn bg-[#1D5B79] text-white capitalize hover:bg-[#134761] lg:px-10 lg:py5 hover:shadow-lg text-lg"
+          >
+            <a class="">Get started</a>
+          </button>
+        </div>
+      </div>
+      <div class="flex flex-col lg:flex-row gap-6 px-2 md:px-3">
+        <div class="space-y-6 w-[96%] lg:w-[48%] text-color">
+          <h4 class="text-[#3E484A] font-bold relative">
+            <span
+              class="absolute top-0 left-0 h-full w-2/6 md:w-2/12 lg:w-1/5 bg-[#FFF3D9]"
+            ></span>
+            <span class="relative z-10">Welcome to FamSec</span>
+          </h4>
+          <h2 class="text-5xl font-extrabold text-[#233036]">
+            Protecting Families,<br />
+            Securing Futures
+          </h2>
+          <p class="text-lg">
+            We understand that protecting your loved ones is of utmost
+            importance. That's why we are dedicated to providing comprehensive
+            solutions tailored to your family's unique needs. Our expert team is
+            committed to creating a solid foundation of security and peace of
+            mind for you and your loved ones.
+          </p>
+          <div class="flex gap-2 lg:gap-4">
+            <button
+              class="btn bg-[#1D5B79] text-white capitalize hover:bg-[#134761]"
+            >
+              Get started
+            </button>
+            <button
+              class="btn bg-[#2EC0BB] text-white capitalize hover:bg-[#179792]"
+            >
+              How it works?
+            </button>
+          </div>
+        </div>
+        <div class="w-[96%] lg:w-[48%]">
+          <div class="grid grid-cols-3 gap-3 justify-evenly">
+            <img
+              class="rounded-lg row-span-3 col-span-2 w-[100%]"
+              src="images/hero-img-1-min.jpg"
+              alt=""
+            />
+            <div class="flex flex-row gap-2 mt-[50%]">
+              <img
+                class="rounded-lg w-[50%] lg:h-[100%]"
+                src="images/hero-img-2-min.jpg"
+                alt=""
+              />
+              <div
+                class="bg-[#FFF3D9] w-[50%] lg:h-[100%] rounded-tr-full"
+              ></div>
+            </div>
+            <img
+              class="rounded-lg w-44 row-span-2"
+              src="images/hero-img-3-min.jpg"
+              alt=""
+            />
 
-             <div class="flex flex-row gap-2">
-              <div class="bg-[#CCF0EE] w-[50%] h-[25%]   rounded-bl-full"></div>
-              <img class="rounded-lg w-[50%] h-[25%] " src="images/hero-img-4-min.jpg" alt="">
+            <div class="flex flex-row gap-2">
+              <div class="bg-[#CCF0EE] w-[50%] h-[25%] rounded-bl-full"></div>
+              <img
+                class="rounded-lg w-[50%] h-[25%]"
+                src="images/hero-img-4-min.jpg"
+                alt=""
+              />
             </div>
-              
-            <img class="rounded-lg w-[80%] col-span-2" src="images/hero-img-5-min.jpg" alt="">
-          </div>
+
+            <img
+              class="rounded-lg w-[80%] col-span-2"
+              src="images/hero-img-5-min.jpg"
+              alt=""
+            />
           </div>
         </div>
-        <div class="flex flex-col lg:flex-row mt-10 lg:mt-40 items-center">
-          <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 w-8/12 text-center mb-10 lg:mb-0">
-            <div class="">
-              <h1 class="text-6xl text-[#1D5B79] font-bold">99.9%</h1>
-              <p class="text-[#788184] text-lg mt-5">Child Safety Solutions</p>
-            </div>
-            <div>
-              <h1 class="text-6xl text-[#1D5B79] font-bold">3,912</h1>
-              <p class="text-[#788184] text-lg mt-5">Happy Customers</p>
-            </div>
-            <div>
-              <h1 class="text-6xl text-[#1D5B79] font-bold">4.8</h1>
-              <p class="text-[#788184] text-lg mt-5">Rating Reviews</p>
-            </div>
+      </div>
+      <div class="flex flex-col lg:flex-row mt-10 lg:mt-40 items-center">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-3 gap-5 w-8/12 text-center mb-10 lg:mb-0"
+        >
+          <div class="">
+            <h1 class="text-3xl lg:text-6xl text-[#1D5B79] font-bold">99.9%</h1>
+            <p class="text-[#788184] text-lg mt-5">Child Safety Solutions</p>
           </div>
-          <div class="bg-[#F6F6F6] p-10 rounded-lg flex relative">
-            <div class="space-y-4 w-3/5 ">
-              <h3 class="text-lg lg:text-2xl text-[#233036] font-semibold">Get started with our service?</h3>
-            <p>We understand that protecting your loved ones is of utmost importance.</p>
+          <div>
+            <h1 class="text-3xl lg:text-6xl text-[#1D5B79] font-bold">3,912</h1>
+            <p class="text-[#788184] text-lg mt-5">Happy Customers</p>
+          </div>
+          <div>
+            <h1 class="text-3xl lg:text-6xl text-[#1D5B79] font-bold">4.8</h1>
+            <p class="text-[#788184] text-lg mt-5">Rating Reviews</p>
+          </div>
+        </div>
+        <div class="bg-[#F6F6F6] p-10 rounded-lg flex relative">
+          <div class="space-y-4 w-3/5">
+            <h3 class="text-lg lg:text-2xl text-[#233036] font-semibold">
+              Get started with our service?
+            </h3>
+            <p>
+              We understand that protecting your loved ones is of utmost
+              importance.
+            </p>
             <p>
               <a href="" class="text-[#1D5B79] font-semibold text-lg">
-                <span>Learn more</span> <i class="fa-solid fa-circle-chevron-right"></i>
+                <span>Learn more</span>
+                <i class="fa-solid fa-circle-chevron-right"></i>
               </a>
             </p>
             <div class="absolute right-[4%] bottom-[-4%]">
-              <img class="h-72" src="images/illustration-woman.svg" alt="">
-            </div>
+              <img class="h-72" src="images/illustration-woman.svg" alt="" />
             </div>
           </div>
         </div>
+      </div>
     </header>
     <!-- Header End -->
-    <main class="my-20">
+    <main class="bg-[#F6F6F6] my-20">
       <!-- Our Service Start -->
-     <section class="bg-[#F6F6F6] py-20">
-      <div class="text-center space-y-7 px-2 lg:px-0 mb-12">
-        <h3 class="text-lg text-[#434E53] font-semibold relative">
-          <span class="absolute bg-[#FFF3D9] top-0 mx-auto h-full  w-36"></span>
-          <span class="relative z-[10]">Our Awesome Services</span>
-        </h3>
-        <h2 class="text-[#233036] font-semibold text-3xl lg:text-5xl">Our Services</h2>
-        <p class="max-w-3xl mx-auto">We understand that protecting your loved ones is of utmost importance. That's why we are dedicated to providing comprehensive solutions tailored to your family's unique needs.</p>
-      </div>
-      <div class="max-w-[1180px] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 px-1">
-        <div class="flex flex-row gap-3 items-start" >
-          <div class="bg-white shadow-lg p-3 rounded-lg w-2/5">
-            <img src="images/icon-1.svg" alt="">
+      <section class="py-20">
+        <div class="text-center space-y-7 px-2 lg:px-0 mb-12">
+          <h3 class="text-lg text-[#434E53] font-semibold relative">
+            <span
+              class="absolute bg-[#FFF3D9] top-0 mx-auto h-full w-36"
+            ></span>
+            <span class="relative z-[10]">Our Awesome Services</span>
+          </h3>
+          <h2 class="text-[#233036] font-semibold text-3xl lg:text-5xl">
+            Our Services
+          </h2>
+          <p class="max-w-3xl mx-auto">
+            We understand that protecting your loved ones is of utmost
+            importance. That's why we are dedicated to providing comprehensive
+            solutions tailored to your family's unique needs.
+          </p>
+        </div>
+        <div
+          class="max-w-[1180px] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 px-1"
+        >
+          <div class="flex flex-row gap-3 items-start">
+            <div class="bg-white shadow-lg p-3 rounded-lg w-2/5">
+              <img src="images/icon-1.svg" alt="" />
+            </div>
+            <div class="space-y-1">
+              <h3 class="font-semibold text-lg text-[#233036]">
+                Child Safety Solutions
+              </h3>
+              <p class="text-[#878F92]">
+                Childproofing services and safety education to keep your
+                children secure and protected at home and in public spaces.
+              </p>
+            </div>
           </div>
-          <div class="space-y-1">
-            <h3 class="font-semibold text-lg text-[#233036]">Child Safety Solutions</h3>
-            <p class="text-[#878F92]">Childproofing services and safety education to keep your children secure and protected at home and in public spaces.</p>
+          <div class="flex flex-row gap-3 items-start">
+            <div class="bg-white shadow-lg p-3 rounded-lg w-2/5">
+              <img src="images/icon-2.svg" alt="" />
+            </div>
+            <div class="space-y-1">
+              <h3 class="font-semibold text-lg text-[#233036]">
+                Elderly Care Monitoring
+              </h3>
+              <p class="text-[#878F92]">
+                Innovative technologies for monitoring and caring for elderly
+                family members, promoting their safety and independence.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-row gap-3 items-start">
+            <div class="bg-white shadow-lg p-3 rounded-lg w-2/5">
+              <img src="images/icon-3.svg" alt="" />
+            </div>
+            <div class="space-y-1">
+              <h3 class="font-semibold text-lg text-[#233036]">
+                Home Fire Safety
+              </h3>
+              <p class="text-[#878F92]">
+                Childproofing services and safety education to keep your
+                children secure and protected at home and in public spaces.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-row gap-3 items-start">
+            <div class="bg-white shadow-lg p-3 rounded-lg w-2/5">
+              <img src="images/icon-4.svg" alt="" />
+            </div>
+            <div class="space-y-1">
+              <h3 class="font-semibold text-lg text-[#233036]">
+                Financial Planning
+              </h3>
+              <p class="text-[#878F92]">
+                Expert financial advice to help you build a strong financial
+                foundation and plan for your family's long-term security.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-row gap-3 items-start">
+            <div class="bg-white shadow-lg p-3 rounded-lg w-2/5">
+              <img src="images/icon-5.svg" alt="" />
+            </div>
+            <div class="space-y-1">
+              <h3 class="font-semibold text-lg text-[#233036]">
+                Personal Safety Devices
+              </h3>
+              <p class="text-[#878F92]">
+                Wearable personal safety devices equipped with GPS tracking and
+                emergency alerts for family members on the go.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-row gap-3 items-start">
+            <div class="bg-white shadow-lg p-3 rounded-lg w-2/5">
+              <img src="images/icon-6.svg" alt="" />
+            </div>
+            <div class="space-y-1">
+              <h3 class="font-semibold text-lg text-[#233036]">
+                Insurance Coverage
+              </h3>
+              <p class="text-[#878F92]">
+                Tailored insurance policies to protect your family's financial
+                future, including life insurance, health insurance, and property
+                insurance.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="flex flex-row gap-3 items-start" >
-          <div class="bg-white shadow-lg p-3 rounded-lg w-2/5">
-            <img src="images/icon-2.svg" alt="">
-          </div>
-          <div class="space-y-1">
-            <h3 class="font-semibold text-lg text-[#233036]">Elderly Care Monitoring</h3>
-            <p class="text-[#878F92]">Innovative technologies for monitoring and caring for elderly family members, promoting their safety and independence.</p>
-          </div>
-        </div>
-        <div class="flex flex-row gap-3 items-start" >
-          <div class="bg-white shadow-lg p-3 rounded-lg w-2/5">
-            <img src="images/icon-3.svg" alt="">
-          </div>
-          <div class="space-y-1">
-            <h3 class="font-semibold text-lg text-[#233036]">Home Fire Safety</h3>
-            <p class="text-[#878F92]">Childproofing services and safety education to keep your children secure and protected at home and in public spaces.</p>
-          </div>
-        </div>
-        <div class="flex flex-row gap-3 items-start" >
-          <div class="bg-white shadow-lg p-3 rounded-lg w-2/5">
-            <img src="images/icon-4.svg" alt="">
-          </div>
-          <div class="space-y-1">
-            <h3 class="font-semibold text-lg text-[#233036]">Financial Planning</h3>
-            <p class="text-[#878F92]">Expert financial advice to help you build a strong financial foundation and plan for your family's long-term security.</p>
-          </div>
-        </div>
-        <div class="flex flex-row gap-3 items-start" >
-          <div class="bg-white shadow-lg p-3 rounded-lg w-2/5">
-            <img src="images/icon-5.svg" alt="">
-          </div>
-          <div class="space-y-1">
-            <h3 class="font-semibold text-lg text-[#233036]">Personal Safety Devices</h3>
-            <p class="text-[#878F92]">Wearable personal safety devices equipped with GPS tracking and emergency alerts for family members on the go.</p>
-          </div>
-        </div>
-        <div class="flex flex-row gap-3 items-start" >
-          <div class="bg-white shadow-lg p-3 rounded-lg w-2/5">
-            <img src="images/icon-6.svg" alt="">
-          </div>
-          <div class="space-y-1">
-            <h3 class="font-semibold text-lg text-[#233036]">Insurance Coverage</h3>
-            <p class="text-[#878F92]">Tailored insurance policies to protect your family's financial future, including life insurance, health insurance, and property insurance.</p>
-          </div>
-        </div>
-
-      </div>
-
-     </section>
+      </section>
       <!-- Our Service End -->
+
+      <!-- Our Solutions Start -->
+      <section class="py-20 max-w-[1180px] mx-auto px-3 lg:px-0">
+        <div class="flex flex-col lg:flex-row gap-5">
+          <div class="w-[100%] lg:w-1/2">
+            <div class="grid grid-cols-2 gap-3">
+              <img
+                class="rounded-lg"
+                src="images/solution-img-1-min.jpg"
+                alt=""
+              />
+              <div class="flex flex-col gap-3">
+                <div
+                  class="h-1/4 w-1/4 bg-[#AEA3E1] rounded-xl rounded-tr-[200px]"
+                ></div>
+                <img
+                  class="h-3/4 w-3/4 rounded-lg"
+                  src="images/solution-img-2-min.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="flex flex-row gap-2">
+                <div class="w-1/2 ml-[20%]">
+                  <div
+                    class="h-1/2 bg-[#CCF0EE] rounded-lg rounded-bl-[200px]"
+                  ></div>
+                </div>
+                <img
+                  class="w-1/2 rounded-lg"
+                  src="images/solution-img-3-min.jpg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="w-11/12 shadow-xl bg-white flex flex-col px-2 lg:px-10 justify-center rounded-lg"
+              >
+                <h3 class="text-[#1D5B79] font-bold text-3xl lg:text-5xl">
+                  25+
+                </h3>
+                <p class="text-[#878F92] text-base">years of experience</p>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-4 lg:space-y-8 w-[100%] lg:w-1/2">
+            <h3 class="text-lg text-[#434E53] font-semibold relative">
+              <span class="absolute bg-[#FFF3D9] top-0 h-full w-24"></span>
+              <span class="relative z-10">Our Solutions</span>
+            </h3>
+            <h2
+              class="text-2xl lg:text-[45px] font-bold text-[#233036] lg:leading-[44px]"
+            >
+              From safeguarding your <br />
+              home with state-of-the-art <br />
+              alarm systems
+            </h2>
+            <p class="text-[#878F92]">
+              From safeguarding your home with state-of-the-art alarm systems to
+              offering reliable insurance options, we ensure that your family is
+              protected in every aspect of life. With our Family Security Plan,
+              you can rest easy knowing that you've taken the necessary steps to
+              secure a brighter future for your family. Trust us to be your
+              partner in safeguarding what matters most – your family's
+              well-being.
+            </p>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-2 space-y-2">
+              <p class="text-[#878F92] flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-[#1D5B79] text-3xl"></i>
+                Home Fire Safety
+              </p>
+              <p class="text-[#878F92] flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-[#1D5B79] text-3xl"></i>
+                Cybersecurity Solutions
+              </p>
+              <p class="text-[#878F92] flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-[#1D5B79] text-3xl"></i>
+                Emergency Preparedness
+              </p>
+              <p class="text-[#878F92] flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-check text-[#1D5B79] text-3xl"></i>
+                Identity Theft Protection
+              </p>
+            </div>
+            <div class="flex gap-2 lg:gap-4">
+              <button
+                class="btn bg-[#1D5B79] text-white capitalize hover:bg-[#134761]"
+              >
+                Get started
+              </button>
+              <button
+                class="btn bg-[#2EC0BB] text-white capitalize hover:bg-[#179792]"
+              >
+                Explore more
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Our Solutions End -->
+
+      <!-- Customer Review Section Start -->
+      <section>
+        <div>
+          <div>
+            <h2>
+              Hear What Our <br />
+              Customers Say
+            </h2>
+          </div>
+          <div></div>
+        </div>
+      </section>
+      <!-- Customer Review Section  End -->
+      <!--  -->
     </main>
     <!-- Footer Section Start -->
     <footer class="md:px-4 py-10 max-w-[1180px] mx-auto">
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-20 mb-7 px-5 lg:px-0 lg:mb-12">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-20 mb-7 px-5 lg:px-0 lg:mb-12"
+      >
         <div class="text-base space-y-7">
-          <img src="images/logo.svg" alt="">
-          <p class="text-[#667074]">From heartwarming testimonials to glowing reviews, these voices reflect the trust and confidence our customers place in us. Let their words speak volumes about the extraordinary experiences that await you with</p>
+          <img src="images/logo.svg" alt="" />
+          <p class="text-[#667074]">
+            From heartwarming testimonials to glowing reviews, these voices
+            reflect the trust and confidence our customers place in us. Let
+            their words speak volumes about the extraordinary experiences that
+            await you with
+          </p>
           <p>
             <a href="" class="text-[#1D5B79] font-semibold text-lg">
-              <span>Learn more</span> <i class="fa-solid fa-circle-chevron-right"></i>
+              <span>Learn more</span>
+              <i class="fa-solid fa-circle-chevron-right"></i>
             </a>
           </p>
-        </div> 
+        </div>
         <div class="flex flex-row gap-10">
           <div class="text-base flex flex-col space-y-4 w-6/12">
-            <h3 class="mb-3 text-[#233036] capitalize text-xl font-semibold">Company</h3> 
-            <a class="link text-color no-underline">Home</a> 
-            <a class="link text-color no-underline">How we work </a> 
-            <a class="link text-color no-underline">Our Mission</a> 
+            <h3 class="mb-3 text-[#233036] capitalize text-xl font-semibold">
+              Company
+            </h3>
+            <a class="link text-color no-underline">Home</a>
+            <a class="link text-color no-underline">How we work </a>
+            <a class="link text-color no-underline">Our Mission</a>
             <a class="link text-color no-underline">About</a>
             <a class="link text-color no-underline">Careers</a>
             <a class="link text-color no-underline">Contact</a>
-          </div> 
+          </div>
           <div class="text-base flex flex-col space-y-4">
-            <h3 class="mb-3 text-[#233036] capitalize text-xl font-semibold">Resources</h3> 
-            <a class="link text-color no-underline">Blog</a> 
-            <a class="link text-color no-underline">Support</a> 
-            <a class="link text-color no-underline">Terms & conditions</a> 
+            <h3 class="mb-3 text-[#233036] capitalize text-xl font-semibold">
+              Resources
+            </h3>
+            <a class="link text-color no-underline">Blog</a>
+            <a class="link text-color no-underline">Support</a>
+            <a class="link text-color no-underline">Terms & conditions</a>
             <a class="link text-color no-underline">Private policy</a>
-          </div> 
+          </div>
         </div>
         <div class="text-base">
-          <h3 class="mb-3 text-[#233036] capitalize text-xl font-semibold">Contact</h3> 
+          <h3 class="mb-3 text-[#233036] capitalize text-xl font-semibold">
+            Contact
+          </h3>
           <div class="grid space-y-6">
-          <p class="text-color">Please feel free to reach out to us with any inquiries, questions, or assistance you may need.</p>
-          <p class="text-color"> <i class="fa-solid fa-location-dot text-[#1D5B79]"></i> <span class="ml-2">23 Main Street, Cityville, State, Zip Code</span></p>
-          <p class="text-color"><i class="fa-solid fa-phone text-[#1D5B79]"></i> <span class="ml-2">+880123456789</span></p>
-          <p><i class="fa-solid fa-globe text-[#1D5B79]"></i> <a href=""><span class="ml-2">https://hellobangaldesh.com</span></a></p>
+            <p class="text-color">
+              Please feel free to reach out to us with any inquiries, questions,
+              or assistance you may need.
+            </p>
+            <p class="text-color">
+              <i class="fa-solid fa-location-dot text-[#1D5B79]"></i>
+              <span class="ml-2"
+                >23 Main Street, Cityville, State, Zip Code</span
+              >
+            </p>
+            <p class="text-color">
+              <i class="fa-solid fa-phone text-[#1D5B79]"></i>
+              <span class="ml-2">+880123456789</span>
+            </p>
+            <p>
+              <i class="fa-solid fa-globe text-[#1D5B79]"></i>
+              <a href=""
+                ><span class="ml-2">https://hellobangaldesh.com</span></a
+              >
+            </p>
           </div>
         </div>
       </div>
-     <hr class="border-1 border-[#E5E7EB]"> 
-    <p class="text-color text-center mt-12 mb-20" >Copyright &copy; 2023. Designed by joefreycodes.com All rights reserved.</p>
+      <hr class="border-1 border-[#E5E7EB]" />
+      <p class="text-color text-center mt-12 mb-10">
+        Copyright &copy; 2023. Designed by joefreycodes.com All rights reserved.
+      </p>
+      <p class="text-color text-center mb-20">
+        Template Practice by Golam Maula
+      </p>
     </footer>
     <!-- Footer Section End -->
-</body>
+  </body>
 </html>
